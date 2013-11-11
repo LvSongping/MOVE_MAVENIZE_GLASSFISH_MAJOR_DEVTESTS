@@ -15,15 +15,18 @@ Nowadays, Most of the test suits are still being moved and mavenized excepted th
 4). Checkout the tests suit form the github https://github.com/LvSongping/MOVE_MAVENIZE_GLASSFISH_MAJOR_DEVTESTS
 
 5). Set the following env. variables as below:
+
         S1AS_HOME=<glassfish v4 installation>
         APS_HOME=<appserv-tests>
 
 6). Check the following env. variables to set with these values:
+
 		SECURE=false
 		DEPL_TARGET=PE
 		Nothing needs to be done if you don't have these env. var set.
 
 4). Start the domain.
+
 		asadmin start-domain -v 
 
 5). Simply type "mvn install" from devtests/deployment.  At the end
@@ -38,6 +41,7 @@ Nowadays, Most of the test suits are still being moved and mavenized excepted th
 
 READING RESULTS :
 -----------------
+
 1. result.html will state whether a particular test passed or failed. This
    file just has a summary of the test results.
-2. compare results with EXPECTED_RESULTS.v3.txt, grep for "FAILED", "UNKNOWN" to see if any test has failed.
+2. compare results with EXPECTED_RESULTS.txt, grep for "FAILED", "UNKNOWN" to see if any test has failed.
